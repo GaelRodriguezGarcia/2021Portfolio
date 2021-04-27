@@ -1,6 +1,57 @@
 @import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap');
 
 
+html{
+  scroll-behavior: smooth;
+}
+
+.section1{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /*You can add anything else to this like image, background-color, etc.*/
+  background: white;
+}
+
+.section2{
+  position: absolute; /*position: fixed;*/
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   /*You can add anything else to this like image, background-color, etc.*/
+  background: #ffdb58;
+}
+
+.section3{
+  position: absolute; /*position: fixed;*/
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   /*You can add anything else to this like image, background-color, etc.*/
+  background: black;
+}
+
+.section4{
+  position: absolute; /*position: fixed;*/
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   /*You can add anything else to this like image, background-color, etc.*/
+  background: maroon;
+}
+
+h1{
+  margin: 100px;
+  text-align: center;
+  padding: 0;
+}
+
+
 
 
 /* Custom default button */
@@ -19,6 +70,8 @@
 body {
   text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
   box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+  margin: 0;
+  padding: 0;
 }
 
 .cover-container {

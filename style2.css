@@ -1,0 +1,41 @@
+html{
+    scroll-behavior: smooth;
+  }
+
+
+  .main {
+    height: 100vh;
+    background-color: green;
+    top: 0;
+    left: 0;
+    
+    
+}
+
+.section2 {
+    height: 100vh;
+    background-color: goldenrod;
+    top: 0;
+    left: 0;
+}
+
+.section3 {
+    height: 100vh;
+    background-color: maroon;
+    top: 0;
+    left: 0;
+}
+
+.section4 {
+    height: 100vh;
+    background-color: blue;
+    top: 0;
+    left: 0;
+    
+}
+
+h1{
+    margin: 100px;
+    text-align: center;
+    padding: 0;
+  }
