@@ -5,6 +5,30 @@ html{
   scroll-behavior: smooth;
 }
 
+
+h1 {
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 28px;
+}
+
+.main-text {
+  position: relative;
+  width: 100%;
+  
+  /* You need to define an explicit height! */
+  height: 100vh;
+}
+
+.main-text h1 {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+width: 100%;
+text-align: center;
+}
+
 body{
   margin: 0;
   padding: 0;
@@ -13,6 +37,12 @@ body{
 nav{
   background: black;
   position: fixed;
+  width: 100%;
+  text-align: center;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-right: 8px;
+  text-decoration: none;
 }
 
 
@@ -143,7 +173,7 @@ body{
 
 
 /*typewriter effect*/
-.typer h1 {
+.typer {
     overflow: hidden; /* Ensures the content is not revealed until the animation */
     border-right: .15em solid orange; /* The typwriter cursor */
     white-space: nowrap; /* Keeps the content on a single line */
@@ -170,3 +200,8 @@ body{
     from, to { border-color: transparent }
     50% { border-color: #ffdb58}
   }
+
+
+  
+
+  
