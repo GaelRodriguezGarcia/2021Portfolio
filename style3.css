@@ -1,0 +1,89 @@
+
+
+/*Landing Page*/
+html,
+body,
+header,
+#intro {
+    height: 100%;
+}
+
+#intro {
+    background: url("images/images")no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/*Style for nav bar*/
+ul {
+    list-style:none;
+  }
+  ul li{
+    display:inline-block; 
+    padding:0 30px; 
+    position:relative;
+  }
+  ul li:not(:last-child)::after{
+    content:""; 
+    border:1px solid #e2e2e2;
+    border-width: 1px 1px 0 0;
+    position:absolute; 
+    right:-3px; 
+    top:0.7em; 
+    height:50%;
+  }
+
+
+  /*Divs For Pages*/
+  #section1{
+    height: 100vh;
+    background-color: #25274D;
+    display: inline-block;
+    width: 100%;  
+  }
+  
+  #section2 {
+    height: 100vh;
+    background-color: rgb(239, 239, 245);
+    display: inline-block;
+    width: 100%;
+  }
+  
+  #section3 {
+    height: 100vh;
+    background-color: #464866;
+    display: inline-block;
+    width: 100%;
+  }
+  
+  #section4 {
+    height: 100vh;
+    background-color: #29648A;
+    display: inline-block;
+    width: 100%;
+  }
+   /*typing effect*/
+   .typer {
+    width: 22ch;
+    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 2em;
+    color: white;
+  }
+    /* The typing effect */
+   @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+    /* The typewriter cursor effect */    
+   @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
