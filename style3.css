@@ -16,8 +16,8 @@ h1{
 }
 
 #intro {
-    background: url("images/main.jpg")no-repeat center center fixed;
-    opacity: 0.4;
+    background: url("images/retro.jpg")no-repeat center center fixed;
+    opacity: 0.5;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -36,7 +36,7 @@ h1{
 
 /*Style for nav bar*/
 nav{
-  padding-left: 792px;
+  
 }
 
 ul {
@@ -155,13 +155,13 @@ ul {
 
    /*typing effect*/
    .typer {
-    width: 22ch;
+    width: 21ch;
     animation: typing 2s steps(22), blink .5s step-end infinite alternate;
     white-space: nowrap;
     overflow: hidden;
     border-right: 3px solid;
     font-family: monospace;
-    font-size: 2em;
+    font-size: 4em;
     color: white;
   }
     /* The typing effect */
@@ -176,6 +176,8 @@ ul {
       border-color: transparent
     }
   }
+
+
 
 
 
