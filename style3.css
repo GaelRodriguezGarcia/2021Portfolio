@@ -9,6 +9,7 @@ header,
     background-color: black;
 }
 
+
 h1{
   font-family: 'Titillium Web 700', sans-serif;
   text-align: center;
@@ -35,8 +36,8 @@ h1{
 
 
 /*Style for nav bar*/
-nav{
-  
+#navigation{
+  padding-left: 100px;
 }
 
 ul {
@@ -88,6 +89,7 @@ ul {
     background-color: #F8F8FF;
     display: inline-block;
     width: 100%;
+    
   }
 
 
@@ -176,6 +178,21 @@ ul {
       border-color: transparent
     }
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
 
 
 

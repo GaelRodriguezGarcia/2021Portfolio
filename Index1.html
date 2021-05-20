@@ -29,6 +29,7 @@
         <li><a class="nav-link" href="#section4">Contact</a></li>
       </ul>
     </nav>
+    </div>
 
     
 
@@ -58,13 +59,13 @@
     <div id="section2">
       <h1>About Me</h1>
       <h6>Some Things To Know About Me...</h6>
-      <img src="" alt="logo1">
+      <img src="images/check.png" alt="logo1">
       <h2>Get The Work Done</h2>
       <p>I will always do my best to try and get the work done. I do so by using my organizational and time managment skills.</p>
-      <img src="" alt="logo2">
+      <img src="images/check.png" alt="logo2">
       <h2>Always Learning More</h2>
       <p>I am always willing to learn new things weather it is someone teaching me or weather it is in my own time.</p>
-      <img src="" alt="logo3">
+      <img src="images/check.png" alt="logo3">
       <h2>Cooperative</h2>
       <p>I will work with you to  reach a solution we are both happy with.</p>
     </div>
@@ -73,10 +74,14 @@
     <div id="section3">
       <h1>My Work</h1>
       <h6>Previously Done Work Through My Past Years In Th﻿e Field</h6>
-      <h3>1</h3>
-      <img src="" alt="project1">
-      <h3>2</h3>
-      <img src="" alt="project2">
+      <h3>Snake Game</h3>
+      <p><a href="https://github.com/CBrown44/Snake-JS.git">
+        <img src="images/Snake.png" alt="W3Schools.com" width="100" height="132">
+        </a></p>
+      <h3>Whack a Yoda</h3>
+      <p><a href="https://github.com/GaelRodriguezGarcia/JavaScript_DOM_whack_a_mole.git">
+        <img src="images/Yoda.png" alt="W3Schools.com" width="100" height="132">
+        </a></p>
       <h3>3</h3>
       <img src="" alt="project3">
 
@@ -85,8 +90,46 @@
 
     <div id="section4">
       <h1>Contact Me</h1>
-    </div>
-
+      <div class="col-lg-8">
+          <div class="contact-wrap">
+          <h3 class="mb-4 text-center">Get in touch with us</h3>
+          <div id="form-message-warning" class="mb-4 w-100 text-center"></div>
+          <div id="form-message-success" class="mb-4 w-100 text-center">
+          <!--Your message was sent, thank you!-->
+          </div>
+          <form method="POST" id="contactForm" name="contactForm" class="contactForm">
+          <div class="row">
+          <div class="col-md-12">
+          <div class="form-group">
+          <input type="text" class="form-control" name="name" id="name" placeholder="Name">
+          </div>
+          </div>
+          <div class="col-md-12">
+          <div class="form-group">
+          <input type="email" class="form-control" name="email" id="email" placeholder="Email">
+          </div>
+          </div>
+          <div class="col-md-12">
+          <div class="form-group">
+          <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject">
+          </div>
+          </div>
+          <div class="col-md-12">
+          <div class="form-group">
+          <textarea name="message" class="form-control" id="message" cols="30" rows="8" placeholder="Message"></textarea>
+          </div>
+          </div>
+          <div class="col-md-12">
+          <div class="form-group">
+          <input type="submit" value="Send Message" class="btn btn-primary">
+          <div class="submitting"></div>
+          </div>
+          </div>
+          </div>
+          </form>
+          </div>
+          </section>
+      </div>  
 
 
     <div class="footer-basic">
