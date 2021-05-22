@@ -21,7 +21,7 @@
 
   <header class="header">
     <nav class="navbar navbar-expand-lg navbar-dark primary-color fixed-top">
-      <!--class="nav nav-masthead justify-content-center float-md-end-->
+      <div class="nav nav-masthead justify-content-center float-md-end">
       <ul>
         <li><a class="nav-link" aria-current="page" href="#intro">Home</a></li>
         <li><a class="nav-link" href="#section2">About Me</a></li>
@@ -29,7 +29,7 @@
         <li><a class="nav-link" href="#section4">Contact</a></li>
       </ul>
     </nav>
-    </div>
+  </div>
 
     
 
@@ -63,8 +63,7 @@
       <div class="container">
           <div class="row">
               <div class="col-lg-12 text-center">
-                  <h2 class="section-heading">Services</h2>
-                  <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                  <h3 class="section-subheading text-muted">Some things to know about me...</h3>
               </div>
           </div>
           <div class="row text-center">
@@ -96,12 +95,14 @@
                   <p class="text-muted">I will work with you to  reach a solution we are both happy with.</p>
               </div>
           </div>
+        </section>
       </div>
-  </section>
+
+
     
 
     <div id="section3">
-      <h1>My Work</h1>
+      <h1>&#8594;My Work&#8592;</h1>
       <h6>Previously Done Work Through My Past Years In Th﻿e Field</h6>
       <h3>Snake Game</h3>
       <p><a href="https://github.com/CBrown44/Snake-JS.git">
@@ -118,47 +119,90 @@
     </div>
 
     <div id="section4">
-      <h1>Contact Me</h1>
-      <div class="col-lg-8">
-          <div class="contact-wrap">
-          <h3 class="mb-4 text-center">Get in touch with us</h3>
-          <div id="form-message-warning" class="mb-4 w-100 text-center"></div>
-          <div id="form-message-success" class="mb-4 w-100 text-center">
-          <!--Your message was sent, thank you!-->
+      <h1>&#171;Contact Me&#187;</h1>
+      <p class="lead">Use This form to contact me</p>
+
+
+      <form id="contact-form" method="post" action="contact.php" role="form">
+
+          <div class="messages"></div>
+
+          <div class="controls">
+
+              <div class="row">
+                  <div class="col-md-6">
+                      <div class="form-group">
+                          <label for="form_name">Firstname *</label>
+                          <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
+                          <div class="help-block with-errors"></div>
+                      </div>
+                  </div>
+                  <div class="col-md-6">
+                      <div class="form-group">
+                          <label for="form_lastname">Lastname *</label>
+                          <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
+                          <div class="help-block with-errors"></div>
+                      </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-md-6">
+                      <div class="form-group">
+                          <label for="form_email">Email *</label>
+                          <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                          <div class="help-block with-errors"></div>
+                      </div>
+                  </div>
+                  <div class="col-md-6">
+                      <div class="form-group">
+                          <label for="form_need">Reason of Contact</label>
+                          <select id="form_need" name="need" class="form-control" required="required" data-error="Please specify your need.">
+                              <option value=""></option>
+                              <option value="Request quotation">Business</option>
+                              <option value="Request order status">Personal</option>
+                              <option value="Other">Other</option>
+                          </select>
+                          <div class="help-block with-errors"></div>
+                      </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-md-12">
+                      <div class="form-group">
+                          <label for="form_message">Message *</label>
+                          <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                          <div class="help-block with-errors"></div>
+                      </div>
+                  </div>
+                  <div class="col-md-12">
+                      <input type="submit" class="btn btn-success btn-send" value="Send message">
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-md-12">
+                      <p class="text-muted">
+                          <strong>*</strong> These fields are required. Contact form template by
+                  </div>
+              </div>
           </div>
-          <form method="POST" id="contactForm" name="contactForm" class="contactForm">
-          <div class="row">
-          <div class="col-md-12">
-          <div class="form-group">
-          <input type="text" class="form-control" name="name" id="name" placeholder="Name">
-          </div>
-          </div>
-          <div class="col-md-12">
-          <div class="form-group">
-          <input type="email" class="form-control" name="email" id="email" placeholder="Email">
-          </div>
-          </div>
-          <div class="col-md-12">
-          <div class="form-group">
-          <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject">
-          </div>
-          </div>
-          <div class="col-md-12">
-          <div class="form-group">
-          <textarea name="message" class="form-control" id="message" cols="30" rows="8" placeholder="Message"></textarea>
-          </div>
-          </div>
-          <div class="col-md-12">
-          <div class="form-group">
-          <input type="submit" value="Send Message" class="btn btn-primary">
-          <div class="submitting"></div>
-          </div>
-          </div>
-          </div>
-          </form>
-          </div>
-          </section>
-      </div>  
+
+      </form>
+
+  </div>
+  <!-- /.8 -->
+
+</div>
+<!-- /.row-->
+
+</div>
+<!-- /.container-->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js" integrity="sha256-dHf/YjH1A4tewEsKUSmNnV05DDbfGN3g7NMq86xgGh8=" crossorigin="anonymous"></script>
+<script src="contact.js"></script>
+
 
 
     <div class="footer-basic">
