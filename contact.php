@@ -1,7 +1,5 @@
 <?php
-/*
- *  CONFIGURE EVERYTHING HERE
- */
+
 
 // an email address that will be in the From field of the email.
 $from = 'Demo contact form <example@gmail.com>';
@@ -22,11 +20,9 @@ $okMessage = 'Contact form successfully submitted. Thank you, I will get back to
 // If something goes wrong, we will display this message.
 $errorMessage = 'There was an error while submitting the form. Please try again later';
 
-/*
- *  LET'S DO THE SENDING
- */
 
-// if you are not debugging and don't need error reporting, turn this off by error_reporting(0);
+
+//sending
 error_reporting(E_ALL & ~E_NOTICE);
 
 try
